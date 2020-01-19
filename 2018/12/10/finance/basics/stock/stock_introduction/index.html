@@ -1,0 +1,229 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>stock introduction | Bear's dream</title><meta name="description" content="stock introduction"><meta name="keywords" content="finance,stock"><meta name="author" content="Yang Xiong"><meta name="copyright" content="Yang Xiong"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon_1.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="stock introduction"><meta name="twitter:description" content="stock introduction"><meta name="twitter:image" content="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><meta property="og:type" content="article"><meta property="og:title" content="stock introduction"><meta property="og:url" content="http://yoursite.com/2018/12/10/finance/basics/stock/stock_introduction/"><meta property="og:site_name" content="Bear's dream"><meta property="og:description" content="stock introduction"><meta property="og:image" content="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yoursite.com/2018/12/10/finance/basics/stock/stock_introduction/"><link rel="prev" title="酒店营销的互联网模式思索" href="http://yoursite.com/2018/12/12/random_notes/internet_thinking_for_hotel_marketing/"><link rel="next" title="boxeh basics" href="http://yoursite.com/2018/12/07/python/basics/bokeh_basics/"><link rel="stylesheet" href="hfttps://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: {"text":"波,妞","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Bear's dream" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Bear's dream</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 音乐照片</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="http://q3zyvka9r.bkt.gdipper.com/20200116153159.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">27</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">26</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">13</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 音乐照片</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#股票的性质"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">股票的性质</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#股票的特征"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">股票的特征</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#股票的分类"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">股票的分类</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#按股东权利"><span class="toc_mobile_items-number">3.1.</span> <span class="toc_mobile_items-text">按股东权利</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#按股东姓名"><span class="toc_mobile_items-number">3.2.</span> <span class="toc_mobile_items-text">按股东姓名</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#按面额"><span class="toc_mobile_items-number">3.3.</span> <span class="toc_mobile_items-text">按面额</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#股利政策，股份变动，股票资本管理"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">股利政策，股份变动，股票资本管理</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#股利政策"><span class="toc_mobile_items-number">4.1.</span> <span class="toc_mobile_items-text">股利政策</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#股份变动"><span class="toc_mobile_items-number">4.2.</span> <span class="toc_mobile_items-text">股份变动</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#普通股股东权利"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">普通股股东权利</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#优先股股东权利"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text">优先股股东权利</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#什么是优先股？"><span class="toc_mobile_items-number">6.1.</span> <span class="toc_mobile_items-text">什么是优先股？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#类似优先股的债券"><span class="toc_mobile_items-number">6.2.</span> <span class="toc_mobile_items-text">类似优先股的债券</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#优先股分类"><span class="toc_mobile_items-number">6.3.</span> <span class="toc_mobile_items-text">优先股分类</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#中国股票主体"><span class="toc_mobile_items-number">7.</span> <span class="toc_mobile_items-text">中国股票主体</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#股票的性质"><span class="toc-number">1.</span> <span class="toc-text">股票的性质</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#股票的特征"><span class="toc-number">2.</span> <span class="toc-text">股票的特征</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#股票的分类"><span class="toc-number">3.</span> <span class="toc-text">股票的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#按股东权利"><span class="toc-number">3.1.</span> <span class="toc-text">按股东权利</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按股东姓名"><span class="toc-number">3.2.</span> <span class="toc-text">按股东姓名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按面额"><span class="toc-number">3.3.</span> <span class="toc-text">按面额</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#股利政策，股份变动，股票资本管理"><span class="toc-number">4.</span> <span class="toc-text">股利政策，股份变动，股票资本管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#股利政策"><span class="toc-number">4.1.</span> <span class="toc-text">股利政策</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#股份变动"><span class="toc-number">4.2.</span> <span class="toc-text">股份变动</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#普通股股东权利"><span class="toc-number">5.</span> <span class="toc-text">普通股股东权利</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#优先股股东权利"><span class="toc-number">6.</span> <span class="toc-text">优先股股东权利</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是优先股？"><span class="toc-number">6.1.</span> <span class="toc-text">什么是优先股？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类似优先股的债券"><span class="toc-number">6.2.</span> <span class="toc-text">类似优先股的债券</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优先股分类"><span class="toc-number">6.3.</span> <span class="toc-text">优先股分类</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#中国股票主体"><span class="toc-number">7.</span> <span class="toc-text">中国股票主体</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(http://q3zyvka9r.bkt.gdipper.com/20200116141055.png)"><div id="post-info"><div id="post-title"><div class="posttitle">stock introduction</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2018-12-10<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-01-19</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/finance/">finance</a><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/finance/basics/">basics</a><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/finance/basics/stock/">stock</a></span><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/2018/12/10/finance/basics/stock/stock_introduction/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2018/12/10/finance/basics/stock/stock_introduction/" itemprop="commentCount"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h1 id="股票的性质"><a href="#股票的性质" class="headerlink" title="股票的性质"></a>股票的性质</h1><ul>
+<li>有价证券</li>
+<li>要式证券 （必须具备所有条件）</li>
+<li>证权证券 （就是说不是创造权利而是证明而已）</li>
+<li>资本证券 （公司资本份额的证券化）</li>
+<li>综合权利证券 （既不是物权证券: 直接财产支配权，也不是债权证券：公司对立的债权人）</li>
+</ul>
+<h1 id="股票的特征"><a href="#股票的特征" class="headerlink" title="股票的特征"></a>股票的特征</h1><ul>
+<li>收益性</li>
+<li>风险性</li>
+<li>流动性</li>
+<li>永久性</li>
+<li>参与性</li>
+</ul>
+<h1 id="股票的分类"><a href="#股票的分类" class="headerlink" title="股票的分类"></a>股票的分类</h1><h2 id="按股东权利"><a href="#按股东权利" class="headerlink" title="按股东权利"></a>按股东权利</h2><ul>
+<li>普通股票<ul>
+<li>蓝筹股</li>
+<li>成长股</li>
+<li>收入股</li>
+<li>周期股</li>
+<li>防守股</li>
+<li>概念股</li>
+<li>投机股</li>
+</ul>
+</li>
+<li>优先股票</li>
+</ul>
+<p>注： 公司盈利和剩余财产分配顺序： 债权人, 优先股票，普通股票</p>
+<h2 id="按股东姓名"><a href="#按股东姓名" class="headerlink" title="按股东姓名"></a>按股东姓名</h2><ul>
+<li>记名股票</li>
+<li>不记名股票</li>
+</ul>
+<p>注： 现在还有记名的？？</p>
+<h2 id="按面额"><a href="#按面额" class="headerlink" title="按面额"></a>按面额</h2><ul>
+<li>有面额股票 （按数值）</li>
+<li>无面额股票 (按比例)</li>
+</ul>
+<p>注： 好像大多数都是无面额</p>
+<h1 id="股利政策，股份变动，股票资本管理"><a href="#股利政策，股份变动，股票资本管理" class="headerlink" title="股利政策，股份变动，股票资本管理"></a>股利政策，股份变动，股票资本管理</h1><h2 id="股利政策"><a href="#股利政策" class="headerlink" title="股利政策"></a>股利政策</h2><ul>
+<li>派现（分红， 直接送钱）</li>
+<li>送股（每个人股数增加）</li>
+<li><p>资本公积金转增股本 （每个人每股钱变多）</p>
+</li>
+<li><p>重要日期</p>
+<ul>
+<li>股利宣布日（公布分红派息）</li>
+<li>股权登记日（统计股利分配的股东的日期）</li>
+<li>除息除权日 （股权登记日后面一天，这天以后买的股票就没得这期股利了）</li>
+<li>派发日 （股利发放的日期）</li>
+</ul>
+</li>
+</ul>
+<h2 id="股份变动"><a href="#股份变动" class="headerlink" title="股份变动"></a>股份变动</h2><ul>
+<li>股票分割（拆细，拆股； 并股， 缩股， 不改变股东权益比重， 但是股价变化会刺激交易。 a 股不准）</li>
+<li>增发（发行新股， 增加股票的发行量，更多的融资，“圈”更多的钱。 定向增发指向指定特定机构或个人增发。 ）</li>
+<li>配股 （面向原有股东增发新股。同样是稀释股本圈钱）</li>
+<li>转增股本 （资本公积金向股东转送股票， 其实是稀释股本， 在不拆股的情况下降低每股价格。）</li>
+</ul>
+<h1 id="普通股股东权利"><a href="#普通股股东权利" class="headerlink" title="普通股股东权利"></a>普通股股东权利</h1><ul>
+<li>公司重大决策参与权</li>
+<li>公司资产收益权和剩余资产分配权</li>
+<li>其他权利（主要是优先认股权）<br>意思就是说增发的时候由于每股价格要变，股东就必须要做出反应免得就要亏。<br>股东有优先权利来做以下决定：<ul>
+<li>优惠价来认购新股。被迫啊。</li>
+<li>权利转让。卖了，老子不玩了。</li>
+<li>不行使权力。 等死。<br>按照股权登记日来划分‘附权股’， ‘含权股’， 和 ‘除权股’</li>
+</ul>
+</li>
+</ul>
+<h1 id="优先股股东权利"><a href="#优先股股东权利" class="headerlink" title="优先股股东权利"></a>优先股股东权利</h1><h2 id="什么是优先股？"><a href="#什么是优先股？" class="headerlink" title="什么是优先股？"></a>什么是优先股？</h2><p>优先股是享有优先权的股票。优先股的股东对公司资产、利润分配等享有优先权，其风险较小。但是优先股股东对公司事务无表决权。 [1]  优先股股东没有选举及被选举权，一般来说对公司的经营没有参与权，优先股股东不能退股，只能通过优先股的赎回条款被公司赎回，但是能稳定分红的股份。所得无解释的股份。他的特点包括：</p>
+<ul>
+<li>股息率固定</li>
+<li>股息分派优先</li>
+<li>剩余资产分配优先</li>
+<li>一般无表决权</li>
+</ul>
+<h2 id="类似优先股的债券"><a href="#类似优先股的债券" class="headerlink" title="类似优先股的债券"></a>类似优先股的债券</h2><ul>
+<li>可转债（但是细节不一样）</li>
+<li>永续债券 （破产清算， 股息不一样）</li>
+</ul>
+<h2 id="优先股分类"><a href="#优先股分类" class="headerlink" title="优先股分类"></a>优先股分类</h2><ul>
+<li>累积优先股 （欠钱要补发）</li>
+<li>非累积优先股 （每年结算， 公司钱不够就赖了）</li>
+<li>参与优先股 （股息拿了还能分剩余盈利）</li>
+<li>非参与优先股 （股息拿了不能分剩余盈利）</li>
+<li>可转换优先股 （可转普通股或者其他品种）</li>
+<li>不可转换优先股 （不能转）</li>
+<li>可赎回优先股</li>
+<li>不可赎回优先股</li>
+<li>股息可调整优先股</li>
+<li>股息固定优先股</li>
+<li>强制分红优先股</li>
+<li>非强制分红优先股</li>
+</ul>
+<h1 id="中国股票主体"><a href="#中国股票主体" class="headerlink" title="中国股票主体"></a>中国股票主体</h1><ul>
+<li>国家股</li>
+<li>法人股</li>
+<li>社会公众股</li>
+<li>外资股<ul>
+<li>境内上市外资股 （外资来投资的，b股）</li>
+<li>境外上市外资股（境内公司境外募集资金，境外上市。 ）<ul>
+<li>h股 港股外资股</li>
+<li>n股 纽约外资股</li>
+<li>l股 伦敦外资股</li>
+<li>s股 新加坡外资股</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>注：红筹股不是外资股。 红筹股注册地在境外，上市在香港。 外资股注册地在国内！</strong></p>
+</div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/finance/">finance    </a><a class="post-meta__tags" href="/tags/stock/">stock    </a></div><div class="post_share"><div class="social-share" data-image="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2018/12/12/random_notes/internet_thinking_for_hotel_marketing/"><img class="prev_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116145842.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>酒店营销的互联网模式思索</span></div></a></div><div class="next-post pull_right"><a href="/2018/12/07/python/basics/bokeh_basics/"><img class="next_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116144530.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>boxeh basics</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2018/12/30/finance/cfa_level1/2_1_Time_Value_Of_Money/" title="CFA note chapter 2 - 数量分析"><img class="relatedPosts_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2018-12-30</div><div class="relatedPosts_title">CFA note chapter 2 - 数量分析</div></div></a></div><div class="relatedPosts_item"><a href="/2019/12/25/finance/basics/future/期货从业资格/" title="期货从业资格笔记"><img class="relatedPosts_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-25</div><div class="relatedPosts_title">期货从业资格笔记</div></div></a></div><div class="relatedPosts_item"><a href="/2019/12/12/finance/basics/option/期权36课笔记/" title="期权36课笔记"><img class="relatedPosts_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-12</div><div class="relatedPosts_title">期权36课笔记</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'xvMxbws16Erd8WUfqxkvHmb5-gzGzoHsz',
+  appKey:'4U0Vo7NQIUL0eJzHdkPzdCDr',
+  placeholder:'波妞你来啦',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></main><footer id="footer" style="background-image: url(http://q3zyvka9r.bkt.gdipper.com/20200116141055.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2020 By Yang Xiong</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="external nofollow noopener noreferrer"><span>Butterfly</span></a></div><div class="footer_custom_text">你好,我是波妞的小弟</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script id="canvas_nest" color="255,240,245" opacity="0.7" zindex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-nest.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/ClickShowText.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="external nofollow noopener noreferrer" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>

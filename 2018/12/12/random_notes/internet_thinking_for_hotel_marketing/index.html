@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>酒店营销的互联网模式思索 | Bear's dream</title><meta name="description" content="酒店营销的互联网模式思索"><meta name="keywords" content="hotel"><meta name="author" content="Yang Xiong"><meta name="copyright" content="Yang Xiong"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon_1.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="酒店营销的互联网模式思索"><meta name="twitter:description" content="酒店营销的互联网模式思索"><meta name="twitter:image" content="http://q3zyvka9r.bkt.gdipper.com/20200116145842.png"><meta property="og:type" content="article"><meta property="og:title" content="酒店营销的互联网模式思索"><meta property="og:url" content="http://yoursite.com/2018/12/12/random_notes/internet_thinking_for_hotel_marketing/"><meta property="og:site_name" content="Bear's dream"><meta property="og:description" content="酒店营销的互联网模式思索"><meta property="og:image" content="http://q3zyvka9r.bkt.gdipper.com/20200116145842.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yoursite.com/2018/12/12/random_notes/internet_thinking_for_hotel_marketing/"><link rel="prev" title="iterator and generator" href="http://yoursite.com/2018/12/24/python/basics/Iterator_and_generator/"><link rel="next" title="stock introduction" href="http://yoursite.com/2018/12/10/finance/basics/stock/stock_introduction/"><link rel="stylesheet" href="hfttps://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: {"text":"波,妞","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Bear's dream" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Bear's dream</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 音乐照片</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="http://q3zyvka9r.bkt.gdipper.com/20200116153159.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">27</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">26</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">13</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 音乐照片</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#写在前面"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">写在前面</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#奖励机制"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">奖励机制</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#随机返现"><span class="toc_mobile_items-number">2.1.</span> <span class="toc_mobile_items-text">随机返现</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#什么是随机返现"><span class="toc_mobile_items-number">2.1.1.</span> <span class="toc_mobile_items-text">什么是随机返现</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#如何推广随机返现"><span class="toc_mobile_items-number">2.1.2.</span> <span class="toc_mobile_items-text">如何推广随机返现</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#推荐奖励"><span class="toc_mobile_items-number">2.2.</span> <span class="toc_mobile_items-text">推荐奖励</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#什么是推荐奖励"><span class="toc_mobile_items-number">2.2.1.</span> <span class="toc_mobile_items-text">什么是推荐奖励</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1对1的推荐奖励"><span class="toc_mobile_items-number">2.2.2.</span> <span class="toc_mobile_items-text">1对1的推荐奖励</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1对多的推荐奖励"><span class="toc_mobile_items-number">2.2.3.</span> <span class="toc_mobile_items-text">1对多的推荐奖励</span></a></li></ol></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#酒店的风格基调和角色化"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">酒店的风格基调和角色化</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#软广模式"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">软广模式</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#广告-vs-非广告"><span class="toc_mobile_items-number">4.1.</span> <span class="toc_mobile_items-text">广告 vs 非广告</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#整体基调"><span class="toc_mobile_items-number">4.2.</span> <span class="toc_mobile_items-text">整体基调</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#文章形式"><span class="toc_mobile_items-number">4.3.</span> <span class="toc_mobile_items-text">文章形式</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#平台覆盖面"><span class="toc_mobile_items-number">4.4.</span> <span class="toc_mobile_items-text">平台覆盖面</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#二次消费"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">二次消费</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#奖励机制"><span class="toc-number">2.</span> <span class="toc-text">奖励机制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#随机返现"><span class="toc-number">2.1.</span> <span class="toc-text">随机返现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是随机返现"><span class="toc-number">2.1.1.</span> <span class="toc-text">什么是随机返现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何推广随机返现"><span class="toc-number">2.1.2.</span> <span class="toc-text">如何推广随机返现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐奖励"><span class="toc-number">2.2.</span> <span class="toc-text">推荐奖励</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是推荐奖励"><span class="toc-number">2.2.1.</span> <span class="toc-text">什么是推荐奖励</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1对1的推荐奖励"><span class="toc-number">2.2.2.</span> <span class="toc-text">1对1的推荐奖励</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1对多的推荐奖励"><span class="toc-number">2.2.3.</span> <span class="toc-text">1对多的推荐奖励</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#酒店的风格基调和角色化"><span class="toc-number">3.</span> <span class="toc-text">酒店的风格基调和角色化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#软广模式"><span class="toc-number">4.</span> <span class="toc-text">软广模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#广告-vs-非广告"><span class="toc-number">4.1.</span> <span class="toc-text">广告 vs 非广告</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整体基调"><span class="toc-number">4.2.</span> <span class="toc-text">整体基调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章形式"><span class="toc-number">4.3.</span> <span class="toc-text">文章形式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#平台覆盖面"><span class="toc-number">4.4.</span> <span class="toc-text">平台覆盖面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二次消费"><span class="toc-number">5.</span> <span class="toc-text">二次消费</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(http://q3zyvka9r.bkt.gdipper.com/20200116145842.png)"><div id="post-info"><div id="post-title"><div class="posttitle">酒店营销的互联网模式思索</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2018-12-12<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-01-19</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/random-notes/">random_notes</a></span><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/2018/12/12/random_notes/internet_thinking_for_hotel_marketing/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2018/12/12/random_notes/internet_thinking_for_hotel_marketing/" itemprop="commentCount"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>近来和一位做互联网营销的朋友聊天，忽然间发现到当今的中国互联网营销，已经到了无所不用其极的程度。<br>上到支付宝的花呗宣传， 下到手机点餐app，返现app, 无时无刻不惊讶于身边五花八门的营销模式。<br>互联网经济的有效性， 扩散性与精准性已然已经今非昔比， 说是领先全球那是绝不夸张。</p>
+<p>回望传统营销行业比如酒店行业，互联网概念的覆盖面似乎还是微乎其微。<br>传统营销由于各大酒店的同质性带来的竞争，让我们似乎不能脱颖而出。<br>我认为最大两个的问题在于：</p>
+<ul>
+<li>营销的同质<br>如何区别于其他酒店？</li>
+<li>营销的有限客户群体<br>如何把营销做给特定群体？</li>
+</ul>
+<p>互联网模式的尝试将会给这两个最大的问题带来无限可能。<br>关于互联网模式的尝试， 相比于实际资本和现金流的投入， 我觉得在风险和消耗上是非常低的， 非常值得尝试。<br>不同模式的尝试也会给营销带来不同的新鲜血液。</p>
+<p><strong>重要： 这篇文章是我的对于酒店营销的纸上谈兵， 很多想法可能不切实际， 希望有可能能起到一点点抛转引玉的作用。 俗话说术业有专攻， 隔行如隔山。 身在工程师和数据分析行业，我也深知自己与营销行业相隔甚远。 这篇随笔里不合理以及不专业之处，还望多多包涵。不恰当的脑补请忽略！</strong></p>
+<h1 id="奖励机制"><a href="#奖励机制" class="headerlink" title="奖励机制"></a>奖励机制</h1><p>我想先谈谈自己总结的奖励机制。<br>个人感觉这是最具吸引力也较为实惠的营销手段。<br>我能想到的奖励机制都列举如下。每一种模式都有其优劣，我也给出自己的一些感受和评价。</p>
+<ul>
+<li>打折。 高定价， 高折扣。<br><strong>模式较为传统， 吸引力不足</strong></li>
+<li>免费发放的优惠券<br><strong>模式较为传统， 吸引力不足</strong></li>
+<li>买多送一<br><strong>在某些商品营销中有刺激作用</strong></li>
+<li>每次消费达标即可返现。 一定数额的消费给与固定数额或百分比的返现。 例如： 100 返 15， 200 返 40。<br><strong>模式较为传统， 对于大批商品售卖有一定刺激</strong></li>
+<li>第一次消费高返现。 比如第一次吃饭， 返50%<br><strong>对于第一次消费的刺激有吸引力</strong></li>
+<li>会员模式，加入会员即可长期享受折扣， 或定期发放的福利和高折扣。<br><strong>对于特定行业，如果福利得当，对于保持某些营销的长期客户有积极作用</strong></li>
+<li>一定时间内（或不限时）再消费即返现的优惠券。<br><strong>在特定营销的二次消费刺激上感觉有吸引力</strong></li>
+<li>推荐模式。 推荐他人消费，每次推荐返还指定金额。或者帮助酒店宣传， 获得额外奖励！<br><strong><font color="green">重点推荐！如今仍然吸引力较高， 属于消费外额外奖励。 比如花呗的推荐奖励机制</font></strong></li>
+<li>随机返现。 每次消费即可抽奖， 随机返现0% - 100%<br><strong><font color="green">重点推荐！同样的返现金额， 平均每人返现固定数额的方式与抽奖模式相比吸引力相差甚远</font></strong></li>
+</ul>
+<p>我深知一些模式已经被我们应用， 比如在连锁酒店的二次消费返现。<br>我想重点谈谈最后两项。 这里先说 <strong>每次消费即可抽奖， 随机返现0% - 100%</strong></p>
+<h2 id="随机返现"><a href="#随机返现" class="headerlink" title="随机返现"></a>随机返现</h2><h3 id="什么是随机返现"><a href="#什么是随机返现" class="headerlink" title="什么是随机返现"></a>什么是随机返现</h3><p>这个想法来自于朋友在做的互联网平台：<br><a href="http://www.1toad.com/" target="_blank" rel="external nofollow noopener noreferrer">一指蟾官方网站</a><br>他们主要的营销模式在于， 建立一个手机商家平台， 吸引各地商家入驻。<br>在app中的指定商家消费， 每次即可获得0% - 100% 的返现。<br>实际返现几率和金额由商家决定。<br>不同于传统返现品台 例如 <a href="https://www.topcashback.cn/" target="_blank" rel="external nofollow noopener noreferrer">topcashback</a>, 一指蟾中的商家是基于本地的。<br>比如某特定一家肯德基加盟了这个平台， 用户并不是在所有肯德基都可以返现， 而是要去特定地点的肯德基才可以返现。<br>也就是说客户群体是针对于某一特定区域的人。<br>与传统的返现app相比， 这个概念被他们称为<strong>精准营销</strong>。</p>
+<p>对于消费者而言， 相比于传统的每次10%或15%的反现，可能的（但是低概率的）0% -100% 返现会带来非常大的消费欲望刺激。<br>试想每次入住， 都有几率可以免除房费（虽然大多数人都不会）， 这对于消费者而言是额外的奖励刺激。<br>具体的奖励数值分配属于数学计算的范畴不做讨论。<br>对于季节的奖励控制这里也不做讨论。<br>据了解 目前加盟的商家都取得了非常的收益。 某些加盟前没有客户的餐饮商家甚至现在能够满座。</p>
+<h3 id="如何推广随机返现"><a href="#如何推广随机返现" class="headerlink" title="如何推广随机返现"></a>如何推广随机返现</h3><p>和我爸的交流中， 我深知如此模式推广的难度和障碍。现在我能想到的推广途径也是已有的途径：</p>
+<ul>
+<li>微信公众号以及的推广中插入推广</li>
+<li>携程的酒店描述或图片中加入（未知是否允许？）</li>
+<li>酒店的网站和app中加入推广</li>
+<li>入住客户对于此模式的推荐</li>
+</ul>
+<p>我的想法是，在非旺季可适当提高返现抽奖（或其他物资奖励）的概率和数额。<br>对于如何刺激入住客户对于此模式的推荐， 我想在下面的推荐章节详解。</p>
+<h2 id="推荐奖励"><a href="#推荐奖励" class="headerlink" title="推荐奖励"></a>推荐奖励</h2><h3 id="什么是推荐奖励"><a href="#什么是推荐奖励" class="headerlink" title="什么是推荐奖励"></a>什么是推荐奖励</h3><p><a href="http://www.1toad.com/" target="_blank" rel="external nofollow noopener noreferrer">一指蟾官方网站</a><br>对于这个平台的另一大特点， 其实也是互联网行业的一大手段即是推荐手段。<br>推荐奖励字面意思即是老用户推荐新用户，或者用户帮助推广商家，获得奖励的模式。<br>最近的例子比如花呗的推荐，上不封顶的推荐模式，是消费者额外的奖励。<br>这也是利用了社交网络的传播原理。</p>
+<h3 id="1对1的推荐奖励"><a href="#1对1的推荐奖励" class="headerlink" title="1对1的推荐奖励"></a>1对1的推荐奖励</h3><p>我相信可能我们酒店对分销和推荐已有一些应用。<br>我能想到的新点子是：<br><strong>对于随机返现，让已入住客户获得其推荐客户所获得的 ‘随机返现’的一部分。</strong><br>这种刺激模式可以使用户推荐也有了‘抽奖’的概念。<br>我还是认为‘抽奖’ 的吸引力是无限的！能抽奖就抽奖 而不是平均分！<br>具体的数字分配亦是数学问题， 总支出不一定高于固定奖励。</p>
+<p>注意1对1推荐的唯一性， 保证了资金链可行性， 和与传销的区别。<br>如果1对1推荐运用得当， 有可能会成为‘随机返现’ 和酒店本身最大的传播模式之一。</p>
+<h3 id="1对多的推荐奖励"><a href="#1对多的推荐奖励" class="headerlink" title="1对多的推荐奖励"></a>1对多的推荐奖励</h3><p>我一直感觉我们酒店的宣传非常有限。 我也看到了大家朋友圈的转发非常的频繁，我认为这其中最大的问题在于<strong>阅读用户群体及总数量</strong><br>我也见证了圣地映像公众号的发展，感觉大家朋友圈孜孜不倦的分享， 然而阅读人数还是非常有限， 以及对于新游客的普及面非常的低。<br>1对多推荐模式也许是对此有可能的一个提升方式。 利用客户本身进行信息扩散。<br>我能想到奖励式1对多推荐的目前有：</p>
+<ul>
+<li>用户游记中加入‘圣地映像’给与特定奖励（抽奖？）</li>
+<li>分享公众号的奖励机制</li>
+<li>分享公众号文章朋友圈即可获得特定奖励或折扣</li>
+<li>分享圣地映像app或者网站， 或者游记的奖励。</li>
+</ul>
+<p>更多模式有待挖掘， 感觉利用客户进行奖励式分销非常有待于挖掘！</p>
+<h1 id="酒店的风格基调和角色化"><a href="#酒店的风格基调和角色化" class="headerlink" title="酒店的风格基调和角色化"></a>酒店的风格基调和角色化</h1><p>我认为就酒店风格塑造而言， 装修上是非常成功的。<br>但是我看了很多其他的酒店， 目前看来大多数酒店也有在装修里做出‘主题’的感觉。<br>比如</p>
+<ul>
+<li><a href="http://hotels.ctrip.com/hotel/6048406.html?isFull=F&amp;checkIn=2018-12-14&amp;checkOut=2018-12-15#ctm_ref=hod_sr_lst_dl_n_1_12" target="_blank" rel="external nofollow noopener noreferrer">稻城阿妈摄影主题酒店</a><br>主题摄影</li>
+<li><a href="http://hotels.ctrip.com/hotel/18517172.html?isFull=F&amp;checkIn=2018-12-14&amp;checkOut=2018-12-15#ctm_ref=hod_sr_lst_dl_n_1_7" target="_blank" rel="external nofollow noopener noreferrer">稻城亲爱的宅宅温泉民宿</a><br>主题温泉</li>
+</ul>
+<p>我们也叫主题客栈/酒店， 我们为什么叫圣地映像？ 映像在哪里？<br>如何对酒店风格基调进行特质化， 以及加深客户印象？<br>每个酒店能不能把‘圣地映像’的概念铺开？</p>
+<p>我能想到的可能方案包括：</p>
+<ul>
+<li><p>故事化，场景化营销<br>我们的圣地映像是<strong>精品主题</strong>酒店<br>说起来有点土， 但是能不能把每个酒店刻画成一个角色，编一个故事？<br>故事是一种沟通方式，也是品牌和产品人格化的象征，没有故事，不成品牌。写出一个好故事，真正地连接消费者内心深处属于人性本质的情感板块，这或许是营销意义上的一种回归。<br>同时，角色感可以增强品牌形象的活力和有好感。<br>可以为每个客户给与免费的酒店角色故事背景手册， 进行‘洗脑’。<br>这个想法来源于目前最火的游戏： <a href="https://www.baidu.com/link?url=lupK1aiMWHZ74xOpTYodBTGpW35wVbT9iSvXnGwtqA4Jf16nxNukDYo-Ztqs1KBjxLGoFKGC0IYiHh0jTSRxyq&amp;wd=&amp;eqid=f282ddb900026b2a000000045c109a1d" target="_blank" rel="external nofollow noopener noreferrer">英雄联盟角色背景故事</a><br>设计师在对游戏中每个角色特点能力分化的同时， 投入精力进行了故事性的设计， 极大的加深了玩家对于每个角色的感情。<br>其实我在这个游戏买什么角色都是看哪个故事写得好。</p>
+</li>
+<li><p>基于酒店的角色形象设计<br>在对每个酒店进行角色化和故事化之后， 可以对每个酒店进行角色形象设计，并可以加入酒店图片中。（比如每幅图片的水印， 或者角标）。这样可以加强对于酒店角色化的强调。<br>进而可以设计每层楼的故事， 每个房间的故事（当然时间和设计成本得考虑， 我就随便说说 -。- ）<br>形象和图标设计对于去同质化应该是一个比较可行的选择。<br><strong>在公众号普及中可以以虚拟酒店角色的口吻进行， 会产生一定的亲切感。</strong><br><strong>公众号的头像可采用角色化</strong><br>客户会感觉在读的过程中是在与某一个特定人物或角色进行交流。<br>参考公众号： 狂言doggy</p>
+</li>
+<li><p>增加每个酒店主题的音乐选择， 突出主题特化</p>
+</li>
+<li><p>加强携程主页的图片非同质化， 突出‘主题‘。（我自己yy的， 可能不得行。。感觉是不是携程有规定？）<br>下面对比携程主页第一的雪域温泉酒店， 我们的主页感觉没有特别突出的 ‘主题’ 优势？<br>也许在酒店角色化和故事化之后可以吧元素加入图片中，不失为一个好选择<br><a href="http://i68.tinypic.com/jj4unt.jpg" target="_blank" rel="external nofollow noopener noreferrer" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="http://i68.tinypic.com/jj4unt.jpg" class="lazyload"></a></p>
+</li>
+</ul>
+<p><a href="http://i68.tinypic.com/j5ebk2.jpg" target="_blank" rel="external nofollow noopener noreferrer" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="http://i68.tinypic.com/j5ebk2.jpg" class="lazyload"></a></p>
+<h1 id="软广模式"><a href="#软广模式" class="headerlink" title="软广模式"></a>软广模式</h1><p>以下软广模式内容纯属脑补。。。我知道这个领域说比做容易，不当的地方请多多包涵。</p>
+<h2 id="广告-vs-非广告"><a href="#广告-vs-非广告" class="headerlink" title="广告 vs 非广告"></a>广告 vs 非广告</h2><p>我认为目前公众号整体形象很像广告， 实质内容不够。<br>公众号内容偏向于侧重于重复地，大方面介绍丹巴，稻城， 四姑娘山。<br>如果可能的化， 推荐跳出定向宣传酒店的思维， 做成<strong>川西旅游攻略的公众号</strong>。<br>我认为公众号的目的不应该在于， 吸引未知客户前往丹巴，稻城， 四姑娘山， 从而入住我们的酒店。<br>这么做的问题在于： 老用户知道这是广告， 不会点进去看。会产生， 我去过了， 我不想看！ 或者我不想去这三个地方， 天天都是他们， 不想点进去！<br>新用户也许不想去丹巴，稻城， 四姑娘山。 他们会问： 为什么要给我介绍这三个地方？ 我不想点击这个公众号！<br>也许建立品牌形象，以及<strong>足够多地吸引潜在客户</strong>为标准<br>也就是说如果做成川西旅游攻略，也许潜在客户短期内不会前往丹巴，稻城， 四姑娘山， 但是公众号会聚集大批量的潜在客户。 只要‘圣地映像’的品牌形象足够深入人心， <strong>客户真的要来丹巴，稻城， 四姑娘山的时候， 在搜索我们几个旅游地点的酒店时， 会很自然地选我们</strong>。</p>
+<h2 id="整体基调"><a href="#整体基调" class="headerlink" title="整体基调"></a>整体基调</h2><p>整体形象基调不统一。 在逗比和高雅之间没有把握好品牌形象。我看了很多公众号文章，貌似这是一个普遍问题。 比如下面的图片， 文字和图片不太搭。<br><a href="http://i64.tinypic.com/2e5tipy.jpg" target="_blank" rel="external nofollow noopener noreferrer" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="http://i64.tinypic.com/2e5tipy.jpg" class="lazyload"></a><br>推荐做成要么风格偏逗比， 要么偏高雅的形式， 更容易塑造一个整体形象。</p>
+<h2 id="文章形式"><a href="#文章形式" class="headerlink" title="文章形式"></a>文章形式</h2><p>如果真做成旅游公众号， 文章的可能模式可以改为以下的模式中的一个， 则更具特色！</p>
+<ul>
+<li>以介绍景点和路线为目标， 覆盖所有川西景点。公众号形象为旅游攻略普及。</li>
+<li>凭借我爸我妈还有大家各位的旅游经历， 以游记形式把公众号做成旅游见闻和各地游记， 吸引潜在客户。公众号形象为旅者。</li>
+</ul>
+<h2 id="平台覆盖面"><a href="#平台覆盖面" class="headerlink" title="平台覆盖面"></a>平台覆盖面</h2><p>我们的品牌文章数量不少， 但是平台覆盖面不够。<br>客户在每天看各个平台的时候会思考， 我为什么要阅读这个内容？ 怎么判断这个不是广告？<br>如今铺天盖地的平台文章，除了特别特色的外，非常容易被用户一扫而过。<br>精力有限情况下， 可以一定程度上减少文章数量， 做成考虑覆盖更多平台的<strong>旅游攻略</strong>形式。<br>利用我爸在多处旅游的优势， 建立完备的川西旅游攻略库， 以及当地名族特色宣传。<br>如果“圣地映像”能够深入人心， 就可以做到以面盖点， 自然而然地吸引更多潜在客户。<br>为此可能需要更多的平台， 比如 知乎， 豆瓣， 天涯。 可以复制粘贴， 但是精品可以以一代10</p>
+<h1 id="二次消费"><a href="#二次消费" class="headerlink" title="二次消费"></a>二次消费</h1><p>我知道客栈也有二次消费的概念。如何刺激消费， 我也没有太多的想法。 目前想的是， 在二次消费中也加入 <strong>随即返现</strong>， <strong>推荐奖励</strong> 和 <strong>故事化</strong> 的 概念， 从互联网模式刺激消费。 微商也许可以加入计划之中，对于微商我不熟悉， 就不纸上谈兵了。<br>总之核心一定还是去同质化， 以及足够的消费刺激。</p>
+<p>就写到这里，还有其他想法的化，之后再增加随笔。</p>
+</div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hotel/">hotel    </a></div><div class="post_share"><div class="social-share" data-image="http://q3zyvka9r.bkt.gdipper.com/20200116145842.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2018/12/24/python/basics/Iterator_and_generator/"><img class="prev_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116144530.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>iterator and generator</span></div></a></div><div class="next-post pull_right"><a href="/2018/12/10/finance/basics/stock/stock_introduction/"><img class="next_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>stock introduction</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'xvMxbws16Erd8WUfqxkvHmb5-gzGzoHsz',
+  appKey:'4U0Vo7NQIUL0eJzHdkPzdCDr',
+  placeholder:'波妞你来啦',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></main><footer id="footer" style="background-image: url(http://q3zyvka9r.bkt.gdipper.com/20200116145842.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2020 By Yang Xiong</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="external nofollow noopener noreferrer"><span>Butterfly</span></a></div><div class="footer_custom_text">你好,我是波妞的小弟</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script id="canvas_nest" color="255,240,245" opacity="0.7" zindex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-nest.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/ClickShowText.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="external nofollow noopener noreferrer" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>

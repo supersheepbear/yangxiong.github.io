@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>CFA note chapter 2 - 数量分析 | Bear's dream</title><meta name="description" content="CFA note chapter 2 - 数量分析"><meta name="keywords" content="finance,cfa"><meta name="author" content="Yang Xiong"><meta name="copyright" content="Yang Xiong"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon_1.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CFA note chapter 2 - 数量分析"><meta name="twitter:description" content="CFA note chapter 2 - 数量分析"><meta name="twitter:image" content="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><meta property="og:type" content="article"><meta property="og:title" content="CFA note chapter 2 - 数量分析"><meta property="og:url" content="http://yoursite.com/2018/12/30/finance/cfa_level1/2_1_Time_Value_Of_Money/"><meta property="og:site_name" content="Bear's dream"><meta property="og:description" content="CFA note chapter 2 - 数量分析"><meta property="og:image" content="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yoursite.com/2018/12/30/finance/cfa_level1/2_1_Time_Value_Of_Money/"><link rel="prev" title="python yaml load" href="http://yoursite.com/2019/04/02/python/basics/yaml_load/"><link rel="next" title="iterator and generator" href="http://yoursite.com/2018/12/24/python/basics/Iterator_and_generator/"><link rel="stylesheet" href="hfttps://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: {"text":"波,妞","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Bear's dream" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Bear's dream</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 音乐照片</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="http://q3zyvka9r.bkt.gdipper.com/20200116153159.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">27</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">26</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">13</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 音乐照片</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#货币的时间价值"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">货币的时间价值</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#利率的三种形式"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">利率的三种形式</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#要求回报的构成"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">要求回报的构成</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#有效年利率-EAR-effective-annual-rate"><span class="toc_mobile_items-number">1.3.</span> <span class="toc_mobile_items-text">有效年利率(EAR: effective annual rate)</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#单笔现金流的现值和终值"><span class="toc_mobile_items-number">1.4.</span> <span class="toc_mobile_items-text">单笔现金流的现值和终值</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#年金"><span class="toc_mobile_items-number">1.5.</span> <span class="toc_mobile_items-text">年金</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#货币时间价值的应用"><span class="toc_mobile_items-number">1.6.</span> <span class="toc_mobile_items-text">货币时间价值的应用</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#TI-BA-II计算器使用"><span class="toc_mobile_items-number">1.7.</span> <span class="toc_mobile_items-text">TI BA II计算器使用</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#折现现金流方法的应用"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">折现现金流方法的应用</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#净现值和内部投资收益率"><span class="toc_mobile_items-number">2.1.</span> <span class="toc_mobile_items-text">净现值和内部投资收益率</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#选择项目"><span class="toc_mobile_items-number">2.1.1.</span> <span class="toc_mobile_items-text">选择项目</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#金融计算器计算NPV-IRR"><span class="toc_mobile_items-number">2.1.2.</span> <span class="toc_mobile_items-text">金融计算器计算NPV, IRR</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#持有期收益-holding-period-return-HPR"><span class="toc_mobile_items-number">2.2.</span> <span class="toc_mobile_items-text">持有期收益(holding period return, HPR)</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#银行贴现收益率-持有期收益率-有效年利率和货币市场收益率"><span class="toc_mobile_items-number">2.3.</span> <span class="toc_mobile_items-text">银行贴现收益率, 持有期收益率, 有效年利率和货币市场收益率</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#各值相互转换"><span class="toc_mobile_items-number">2.3.1.</span> <span class="toc_mobile_items-text">各值相互转换</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#货币加权收益率和时间加权收益率"><span class="toc_mobile_items-number">2.4.</span> <span class="toc_mobile_items-text">货币加权收益率和时间加权收益率</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#数理统计基础"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">数理统计基础</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#基本概念"><span class="toc_mobile_items-number">3.1.</span> <span class="toc_mobile_items-text">基本概念</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#货币的时间价值"><span class="toc-number">1.</span> <span class="toc-text">货币的时间价值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#利率的三种形式"><span class="toc-number">1.1.</span> <span class="toc-text">利率的三种形式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#要求回报的构成"><span class="toc-number">1.2.</span> <span class="toc-text">要求回报的构成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有效年利率-EAR-effective-annual-rate"><span class="toc-number">1.3.</span> <span class="toc-text">有效年利率(EAR: effective annual rate)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单笔现金流的现值和终值"><span class="toc-number">1.4.</span> <span class="toc-text">单笔现金流的现值和终值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#年金"><span class="toc-number">1.5.</span> <span class="toc-text">年金</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#货币时间价值的应用"><span class="toc-number">1.6.</span> <span class="toc-text">货币时间价值的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TI-BA-II计算器使用"><span class="toc-number">1.7.</span> <span class="toc-text">TI BA II计算器使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#折现现金流方法的应用"><span class="toc-number">2.</span> <span class="toc-text">折现现金流方法的应用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#净现值和内部投资收益率"><span class="toc-number">2.1.</span> <span class="toc-text">净现值和内部投资收益率</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择项目"><span class="toc-number">2.1.1.</span> <span class="toc-text">选择项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#金融计算器计算NPV-IRR"><span class="toc-number">2.1.2.</span> <span class="toc-text">金融计算器计算NPV, IRR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#持有期收益-holding-period-return-HPR"><span class="toc-number">2.2.</span> <span class="toc-text">持有期收益(holding period return, HPR)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#银行贴现收益率-持有期收益率-有效年利率和货币市场收益率"><span class="toc-number">2.3.</span> <span class="toc-text">银行贴现收益率, 持有期收益率, 有效年利率和货币市场收益率</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#各值相互转换"><span class="toc-number">2.3.1.</span> <span class="toc-text">各值相互转换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#货币加权收益率和时间加权收益率"><span class="toc-number">2.4.</span> <span class="toc-text">货币加权收益率和时间加权收益率</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数理统计基础"><span class="toc-number">3.</span> <span class="toc-text">数理统计基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本概念"><span class="toc-number">3.1.</span> <span class="toc-text">基本概念</span></a></li></ol></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(http://q3zyvka9r.bkt.gdipper.com/20200116141055.png)"><div id="post-info"><div id="post-title"><div class="posttitle">CFA note chapter 2 - 数量分析</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2018-12-30<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-01-19</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/finance/">finance</a><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/finance/cfa-level1/">cfa_level1</a></span><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/2018/12/30/finance/cfa_level1/2_1_Time_Value_Of_Money/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2018/12/30/finance/cfa_level1/2_1_Time_Value_Of_Money/" itemprop="commentCount"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h1 id="货币的时间价值"><a href="#货币的时间价值" class="headerlink" title="货币的时间价值"></a>货币的时间价值</h1><h2 id="利率的三种形式"><a href="#利率的三种形式" class="headerlink" title="利率的三种形式"></a>利率的三种形式</h2><ul>
+<li>要求回报率： 客户要求的回报率。</li>
+<li>折现率，贴现率(discount rate)： 未来收益折算为现值。</li>
+<li>机会成本(oppotunity cost): 失去的潜在收益。相同风险水平(identical risk)上的次优水平(next best)的收益率。</li>
+</ul>
+<h2 id="要求回报的构成"><a href="#要求回报的构成" class="headerlink" title="要求回报的构成"></a>要求回报的构成</h2><ul>
+<li>要求回报率 = 名义无风险利率 + 风险溢价</li>
+<li>名义无风险利率 = 实际无风险利率 + 通货膨胀率</li>
+<li>风险溢价 = 流动性风险溢价 + 违约风险溢价 + 期限风险溢价</li>
+</ul>
+<h2 id="有效年利率-EAR-effective-annual-rate"><a href="#有效年利率-EAR-effective-annual-rate" class="headerlink" title="有效年利率(EAR: effective annual rate)"></a>有效年利率(EAR: effective annual rate)</h2><p>$EAR = (1 + r/n)^n -1$<br>r是名义利率(nominal rate)。 n是一年内复利次数。 </p>
+<h2 id="单笔现金流的现值和终值"><a href="#单笔现金流的现值和终值" class="headerlink" title="单笔现金流的现值和终值"></a>单笔现金流的现值和终值</h2><ul>
+<li>FV: 终值</li>
+<li>r: 利率</li>
+<li>PV: 现值</li>
+<li>n: 期数</li>
+</ul>
+<p>终值计算：<br>每年一次复利FV: $ FV = PV(1+r)^n $<br>每年多次复利FV: $ FV_N = PV(1+\frac{r}{m})^{mn} $<br>连续复利FV: $ FV = PVe^{rn} $</p>
+<p>现值计算：$ PV = FV/(1+r)^{n} $<br>此过程称为折现。此时r为折现率。</p>
+<h2 id="年金"><a href="#年金" class="headerlink" title="年金"></a>年金</h2><p>年金指一定时期内一系列相等金额的收付款项. 比如: 按揭贷款吗分期付款, 发放养老金, 支付租金, 提取折旧.</p>
+<ul>
+<li>A: 每年收付的金额</li>
+<li>i: 每期利率</li>
+<li>F: 年金终值</li>
+<li>P: 年金现值</li>
+<li>n: 期数</li>
+</ul>
+<p>年金终值计算:<br>$F = A \left(\frac{(1+i)^n - 1}{i} \right)$<br>年金现值计算<br>$F = A \left(\frac{1-(1+i)^{-n}}{i} \right)$<br>先付年金(annuity due): 年初先给钱, 所以多算一个复利(1 + i)<br>$F = A \left(\frac{(1+i)^{n+1} - 1}{i} - 1\right)$<br>递延年金: 第一次收款在第二期或者第二期之后<br>永续年金: 无限期支付,只有现值没有终值.<br>$P = \frac{A}{i}$</p>
+<h2 id="货币时间价值的应用"><a href="#货币时间价值的应用" class="headerlink" title="货币时间价值的应用"></a>货币时间价值的应用</h2><ul>
+<li>不等额现金流量终值和现值: 每年分开计算即可</li>
+<li>分段年金流量: 同上</li>
+<li>养老金: 同上</li>
+</ul>
+<h2 id="TI-BA-II计算器使用"><a href="#TI-BA-II计算器使用" class="headerlink" title="TI BA II计算器使用"></a>TI BA II计算器使用</h2><p>Todo</p>
+<h1 id="折现现金流方法的应用"><a href="#折现现金流方法的应用" class="headerlink" title="折现现金流方法的应用"></a>折现现金流方法的应用</h1><h2 id="净现值和内部投资收益率"><a href="#净现值和内部投资收益率" class="headerlink" title="净现值和内部投资收益率"></a>净现值和内部投资收益率</h2><ul>
+<li><p>净现值(net present value, NPV)<br>一项投资所产生的未来现金流的折现值和项目投资成本之间的差值.<br>净现值为正即投资方案可行.<br>$C<em>0$: 当前成本<br>$CF_t$ : 第t年的净收益值<br>$NPV = PV - C_0 = \sum</em>{i=1}^{n} \frac{CF_t}{(1+r)^t} $</p>
+</li>
+<li><p>内部收益率(internal rate of return, IRR)<br>能够使现金流入量的现值等于现金流出量现值的贴现率, 或者是使投资方案净现值为0的贴现率.<br>$NPV = CF_0 + \frac {CF_1}{(1 + IRR)^1} + \frac {CF_2}{(1 + IRR)^2} + … + \frac {CF_N}{(1 + IRR)^N} = 0$</p>
+<h3 id="选择项目"><a href="#选择项目" class="headerlink" title="选择项目"></a>选择项目</h3></li>
+<li>独立项目(independent project)<br>投资决策不受其他项目投资决策影响.不存在选项目问题. 就看是不是 NPV&gt;0, IRR&lt;收益率</li>
+<li>互斥项目(mutually exclusive project)<br>选择A项目就不能选择B.<br>所以要选择NPV大的, IRR高的.<br>如果相互矛盾, 就要选NPV大的, 因为IRR不能反映投资规模.</li>
+</ul>
+<h3 id="金融计算器计算NPV-IRR"><a href="#金融计算器计算NPV-IRR" class="headerlink" title="金融计算器计算NPV, IRR"></a>金融计算器计算NPV, IRR</h3><p>Todo</p>
+<h2 id="持有期收益-holding-period-return-HPR"><a href="#持有期收益-holding-period-return-HPR" class="headerlink" title="持有期收益(holding period return, HPR)"></a>持有期收益(holding period return, HPR)</h2><p>某一投资工具持有一段时间所带来的总收益, 包括利息收入或股利收入和资本利得或损失.<br>$P_t$: 第t年终值<br>$ HPR = \frac {P_1 - P_0 + CF_1}{P_0}$<br>$P_1 - P_0$: 资本的升值<br>$CF_1$: 净收益值, 红利</p>
+<h2 id="银行贴现收益率-持有期收益率-有效年利率和货币市场收益率"><a href="#银行贴现收益率-持有期收益率-有效年利率和货币市场收益率" class="headerlink" title="银行贴现收益率, 持有期收益率, 有效年利率和货币市场收益率"></a>银行贴现收益率, 持有期收益率, 有效年利率和货币市场收益率</h2><ul>
+<li>持有期收益率(holding period yield, HPY)<br>$ HPY = R<em>t = \frac {P_t - P</em>{t-1} + CF_t}{P_t}$<br>相当于t-1时刻到t时刻的HPR</li>
+<li>有效年利率(effective annual yield, EAY)<br>$ EAY = (1 + HPY)^{\frac{365}{t}} - 1 $<br>一般而言讨论金融产品收益率都是指年收益率</li>
+<li>银行贴现收益率 (band discount yield)<br>这是对于银行贴现证券而言的.<br>P: 证券的购买价格<br>F: 证券的票面价格<br>t: 持有到期时间<br>$r_{BD} = \frac{F - P}{F}\frac{360}{t}$</li>
+<li>货币市场收益率 (money market yield)<br>相比于银行贴现收益率, 使用P作为分母, 更科学.<br>$r_{MM} = \frac{F - P}{P}\frac{360}{t}$</li>
+</ul>
+<p><strong>注意, $r_{MM}$是用的单利, 而且用了360天计算, 而EAY用了复利, 而且是365天计算!!这就是他们的区别!!</strong></p>
+<h3 id="各值相互转换"><a href="#各值相互转换" class="headerlink" title="各值相互转换"></a>各值相互转换</h3><p>$EAY = (1 +HPY)^{\frac{365}{t}} - 1$<br>$HPY = \frac {r<em>{BD}(\frac{t}{360})}{1 - r</em>{BD}(\frac{t}{360})}$<br>推导:<br>$r<em>{BD} = \frac{F-P}{F} =\frac{ P_t + CF_t - P</em>{t-1}}{P<em>{t-1} + CF_t}\times \frac{360}{t} =  \frac {HPY}{1-HPY} \times \frac{360}{t}$<br>=&gt; $HPY = \frac {r</em>{BD}(\frac{t}{360})}{1 - r_{BD}(\frac{t}{360})}$</p>
+<p>$r<em>{MM} = \frac{F - P}{P} \times \frac{360}{t} = HPY \times \frac{360}{t} = \frac{360 \times r</em>{BD}}{360 - t \times r<em>{BD}} = \frac {r</em>{BD}}{1 - t \times \frac{r_{BD}}{360}}$</p>
+<ul>
+<li>债券等价收益率(bond equivalend yield, BEY)<br>P: 债券价格<br>r: 半年期收益率<br>M: 到期支付的本金<br>C: 每次支付的利息<br>n: 利息期数<br>$ P = \frac{C}{1+r} +\frac{C}{(1+r)^2} +… +\frac{C + M}{(1+r)^n}$<br>求得r为半年期收益率, 而债券等价收益率 BEY = 2 <em> r<br><em>*美国要求必须这么算一年的单利!</em></em><br>HPY 和 BEY, EAY可以相互转换<br>$1 + HPY = (1 + \frac{BEY}{2})^{2 \times \frac{t}{365}}  = (1 + EAY)^{\frac{t}{365}}$</li>
+</ul>
+<h2 id="货币加权收益率和时间加权收益率"><a href="#货币加权收益率和时间加权收益率" class="headerlink" title="货币加权收益率和时间加权收益率"></a>货币加权收益率和时间加权收益率</h2><ul>
+<li><p>货币加权收益率(内部收益率) (money weighted rate of return)<br>R_D : 货币加权收益率<br>V_0 : 证券组合初始市场价值<br>V_N: 证券组合的期末市场价值<br>C_K: 自期间k内现金流入减去流出<br>$ V_0 = \frac{C_1}{1+ R_D} +\frac{C_2}{(1+R_D)^2} +… +\frac{C_N + V_N}{(1+R_D)^n}$<br><strong>货币加权收益率就是IRR 换了个理解方式而已</strong></p>
+</li>
+<li><p>时间加权收益率(time-weighted rate of return)(几何收益率)<br>R<em>r: 时间加权收益率<br>R</em>{Pk}: 子期间k的组合投资收益<br>N: 评估期内的子期间数<br>$ R<em>r = [(1 +R</em>{P1})(1 +R<em>{P2})…(1 +R</em>{PN})]^{\frac{1}{N}} - 1$</p>
+</li>
+</ul>
+<h1 id="数理统计基础"><a href="#数理统计基础" class="headerlink" title="数理统计基础"></a>数理统计基础</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2></div></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/finance/">finance    </a><a class="post-meta__tags" href="/tags/cfa/">cfa    </a></div><div class="post_share"><div class="social-share" data-image="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2019/04/02/python/basics/yaml_load/"><img class="prev_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116144530.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>python yaml load</span></div></a></div><div class="next-post pull_right"><a href="/2018/12/24/python/basics/Iterator_and_generator/"><img class="next_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116144530.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>iterator and generator</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2019/12/25/finance/basics/future/期货从业资格/" title="期货从业资格笔记"><img class="relatedPosts_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-25</div><div class="relatedPosts_title">期货从业资格笔记</div></div></a></div><div class="relatedPosts_item"><a href="/2019/12/12/finance/basics/option/期权36课笔记/" title="期权36课笔记"><img class="relatedPosts_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2019-12-12</div><div class="relatedPosts_title">期权36课笔记</div></div></a></div><div class="relatedPosts_item"><a href="/2018/12/10/finance/basics/stock/stock_introduction/" title="stock introduction"><img class="relatedPosts_cover lazyload" data-src="http://q3zyvka9r.bkt.gdipper.com/20200116141055.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2018-12-10</div><div class="relatedPosts_title">stock introduction</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'xvMxbws16Erd8WUfqxkvHmb5-gzGzoHsz',
+  appKey:'4U0Vo7NQIUL0eJzHdkPzdCDr',
+  placeholder:'波妞你来啦',
+  avatar:'retro',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'en',
+  recordIP: true
+});</script></div></div></main><footer id="footer" style="background-image: url(http://q3zyvka9r.bkt.gdipper.com/20200116141055.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2020 By Yang Xiong</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="external nofollow noopener noreferrer"><span>Butterfly</span></a></div><div class="footer_custom_text">你好,我是波妞的小弟</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script id="canvas_nest" color="255,240,245" opacity="0.7" zindex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-nest.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/ClickShowText.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="external nofollow noopener noreferrer" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>
