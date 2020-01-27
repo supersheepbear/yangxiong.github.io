@@ -1,10 +1,19 @@
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /tags/
 Allow: /about/
+Allow: /categories/
+Allow: /movies/
+Allow: /music/
+
+
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
-Disallow: /vendor/
-Disallow: /content.json
-Disallow: /404.html
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://yangxiongwiki.com/sitemap.xml
+Sitemap: https://yangxiongwiki.com/baidusitemap.xml
