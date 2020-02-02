@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>visualization widgets libraries</title>
+      <link href="/2020/02/01/python/advanced/visualization_widgets_library/"/>
+      <url>/2020/02/01/python/advanced/visualization_widgets_library/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>There are multiple different interactive visualization tools for python, which can help visualize data in interactive ways.</p><h1 id="ipywidget"><a href="#ipywidget" class="headerlink" title="ipywidget"></a>ipywidget</h1><p>This library is only able to be used in jupyter notebook.<br>However, it provides tremendous functions.<br>The most advantage of this library is that you can link widgets together.<br>Here is the official documentation:</p><p><a href="https://ipywidgets.readthedocs.io/en/latest/user_guide.html" target="_blank" rel="external nofollow noopener noreferrer">https://ipywidgets.readthedocs.io/en/latest/user_guide.html</a></p><h1 id="streamlit"><a href="#streamlit" class="headerlink" title="streamlit"></a>streamlit</h1><p>This library is super easy to use, and able to be run with a simple cmd command.<br>It is a very strong tool for data visualization or for making a simple app to use.<br>However, it can not link widgets together compared to ipywidget.<br>Here is the official documentation:<br><a href="https://docs.streamlit.io/" target="_blank" rel="external nofollow noopener noreferrer">https://docs.streamlit.io/</a></p><p>github repo:<br><a href="https://github.com/streamlit/streamlit" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/streamlit/streamlit</a></p><p>Good examples:<br><a href="https://github.com/MarcSkovMadsen/awesome-streamlit" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/MarcSkovMadsen/awesome-streamlit</a></p><h1 id="Other-libraris"><a href="#Other-libraris" class="headerlink" title="Other libraris"></a>Other libraris</h1><p>I have not tried other libraries but here is the list that can be tried:</p><ul><li><a href="https://bokeh.pydata.org/en/latest/index.html" target="_blank" rel="external nofollow noopener noreferrer">Bokeh</a> </li><li><a href="https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93" target="_blank" rel="external nofollow noopener noreferrer">Jupyter Voila</a> </li><li><a href="http://panel.pyviz.org/" target="_blank" rel="external nofollow noopener noreferrer">Panel</a> </li><li><a href="https://plot.ly/dash/" target="_blank" rel="external nofollow noopener noreferrer">Plotly Dash</a> </li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+          <category> advanced </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> ipywidget </tag>
+            
+            <tag> streamlit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>matplotlib 基础绘图速查表</title>
       <link href="/2020/01/26/python/kesci_notes/matplotlib%E5%9F%BA%E7%A1%80%E7%BB%98%E5%9B%BE%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
       <url>/2020/01/26/python/kesci_notes/matplotlib%E5%9F%BA%E7%A1%80%E7%BB%98%E5%9B%BE%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>

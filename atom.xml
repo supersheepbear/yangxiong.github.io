@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangxiongwiki.com/"/>
-  <updated>2020-02-02T15:43:14.485Z</updated>
+  <updated>2020-02-02T15:50:32.246Z</updated>
   <id>https://yangxiongwiki.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>visualization widgets libraries</title>
+    <link href="https://yangxiongwiki.com/2020/02/01/python/advanced/visualization_widgets_library/"/>
+    <id>https://yangxiongwiki.com/2020/02/01/python/advanced/visualization_widgets_library/</id>
+    <published>2020-02-01T21:49:00.000Z</published>
+    <updated>2020-02-02T15:50:32.246Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>There are multiple different interactive visualization tools for python, which can help visualize data in interactive ways.</p><h1 id="ipywidget"><a href="#ipywidget" class="headerlink" title="ipywidget"></a>ipywidget</h1><p>This library is only able to be used in jupyter notebook.<br>However, it provides tremendous functions.<br>The most advantage of this library is that you can link widgets together.<br>Here is the official documentation:</p><p><a href="https://ipywidgets.readthedocs.io/en/latest/user_guide.html" target="_blank" rel="external nofollow noopener noreferrer">https://ipywidgets.readthedocs.io/en/latest/user_guide.html</a></p><h1 id="streamlit"><a href="#streamlit" class="headerlink" title="streamlit"></a>streamlit</h1><p>This library is super easy to use, and able to be run with a simple cmd command.<br>It is a very strong tool for data visualization or for making a simple app to use.<br>However, it can not link widgets together compared to ipywidget.<br>Here is the official documentation:<br><a href="https://docs.streamlit.io/" target="_blank" rel="external nofollow noopener noreferrer">https://docs.streamlit.io/</a></p><p>github repo:<br><a href="https://github.com/streamlit/streamlit" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/streamlit/streamlit</a></p><p>Good examples:<br><a href="https://github.com/MarcSkovMadsen/awesome-streamlit" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/MarcSkovMadsen/awesome-streamlit</a></p><h1 id="Other-libraris"><a href="#Other-libraris" class="headerlink" title="Other libraris"></a>Other libraris</h1><p>I have not tried other libraries but here is the list that can be tried:</p><ul><li><a href="https://bokeh.pydata.org/en/latest/index.html" target="_blank" rel="external nofollow noopener noreferrer">Bokeh</a> </li><li><a href="https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93" target="_blank" rel="external nofollow noopener noreferrer">Jupyter Voila</a> </li><li><a href="http://panel.pyviz.org/" target="_blank" rel="external nofollow noopener noreferrer">Panel</a> </li><li><a href="https://plot.ly/dash/" target="_blank" rel="external nofollow noopener noreferrer">Plotly Dash</a> </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yangxiongwiki.com/categories/python/"/>
+    
+      <category term="advanced" scheme="https://yangxiongwiki.com/categories/python/advanced/"/>
+    
+    
+      <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
+    
+      <category term="ipywidget" scheme="https://yangxiongwiki.com/tags/ipywidget/"/>
+    
+      <category term="streamlit" scheme="https://yangxiongwiki.com/tags/streamlit/"/>
+    
+  </entry>
   
   <entry>
     <title>matplotlib 基础绘图速查表</title>
@@ -583,36 +615,6 @@
       <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
     
       <category term="pandas" scheme="https://yangxiongwiki.com/tags/pandas/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python yaml load</title>
-    <link href="https://yangxiongwiki.com/2019/04/02/python/basics/yaml_load/"/>
-    <id>https://yangxiongwiki.com/2019/04/02/python/basics/yaml_load/</id>
-    <published>2019-04-02T23:38:00.000Z</published>
-    <updated>2020-02-02T15:42:13.260Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Load yaml to a nested dict structure, and then parse to a class.<br>below is the code:</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Struct</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, data)</span>:</span></span><br><span class="line">        <span class="keyword">for</span> name, value <span class="keyword">in</span> data.items():</span><br><span class="line">            setattr(self, name, self._wrap(value))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">_wrap</span><span class="params">(self, value)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> isinstance(value, (tuple, list, set, frozenset)): </span><br><span class="line">            <span class="keyword">return</span> type(value)([self._wrap(v) <span class="keyword">for</span> v <span class="keyword">in</span> value])</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> Struct(value) <span class="keyword">if</span> isinstance(value, dict) <span class="keyword">else</span> value</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">r'c:\Users\uidn4064\Desktop\project_data_analysis\FD69\lab\test.yaml'</span>) <span class="keyword">as</span> stream:</span><br><span class="line">    yaml_dict = yaml.load(stream)</span><br><span class="line">    struct = Struct(yaml_dict)</span><br></pre></td></tr></table></figure></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://yangxiongwiki.com/categories/python/"/>
-    
-      <category term="basics" scheme="https://yangxiongwiki.com/categories/python/basics/"/>
-    
-    
-      <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
-    
-      <category term="yaml" scheme="https://yangxiongwiki.com/tags/yaml/"/>
     
   </entry>
   
