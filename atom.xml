@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangxiongwiki.com/"/>
-  <updated>2020-02-02T15:50:32.246Z</updated>
+  <updated>2020-02-08T01:56:51.677Z</updated>
   <id>https://yangxiongwiki.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>option trade small summary.md</title>
+    <link href="https://yangxiongwiki.com/2020/02/07/random_notes/option_trade_small_summary/"/>
+    <id>https://yangxiongwiki.com/2020/02/07/random_notes/option_trade_small_summary/</id>
+    <published>2020-02-08T01:47:10.000Z</published>
+    <updated>2020-02-08T01:56:51.677Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="期权操作总结"><a href="#期权操作总结" class="headerlink" title="期权操作总结"></a>期权操作总结</h1><p>今日尝试期权入坑. 之前都在模拟盘交易,第一次体验实盘,小量尝试了一下操作,总结:</p><ul><li>模拟盘中没有意识到小市值股票期权的流动性问题. 事实上越是虚值的期权的流动性越是非常的差.应该尽量避免小市值虚值期权的交易.特别是比较虚值的即将到期的短期期权, 简直就是坑爹,谁买谁接盘侠.</li><li>流动性低的期权报价不一定有参考价值. 最高的ask和最低的bid差的远的要死.看价格可以进去看ask和bid的具体值.</li><li>我发现波动率高的大市值股票的期权价格都是虚高的要死. 根本没有机会去做铁鹰或者蝶式这种操作. 而且大市值股票每一单位的期权都巨贵.目前不准备再碰大市值股票的期权了.</li><li><p>我尝试了裸买期权,感觉稍微有点人气的股票,那价格根本就非常离谱. 就算是赌单边的操作,比较合理的操作应该还是要用价差来买,不要裸买期权.</p></li><li><p>赌单边的情况下, 目前没有特别好的方法去找怎么买价格最合理. 用ib的价差模板配出来的组合,最大盈亏比,胜率,盈亏平衡点可以差距特别大…配出来的吧,有时候满意,有时候又不满意. 以后做精细量化得想法子怎么计算出最优选择. </p></li><li>不知道是不是我错觉,总觉得买期权比买股票本身风险小, 最大盈亏比大, 胜率还差不了多少… 可能是错觉吧. 今后再研究.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="random_notes" scheme="https://yangxiongwiki.com/categories/random-notes/"/>
+    
+    
+      <category term="option" scheme="https://yangxiongwiki.com/tags/option/"/>
+    
+      <category term="finance" scheme="https://yangxiongwiki.com/tags/finance/"/>
+    
+      <category term="trade" scheme="https://yangxiongwiki.com/tags/trade/"/>
+    
+  </entry>
   
   <entry>
     <title>visualization widgets libraries</title>
@@ -582,39 +612,9 @@
       <category term="option" scheme="https://yangxiongwiki.com/categories/finance/basics/option/"/>
     
     
-      <category term="finance" scheme="https://yangxiongwiki.com/tags/finance/"/>
-    
       <category term="option" scheme="https://yangxiongwiki.com/tags/option/"/>
     
-  </entry>
-  
-  <entry>
-    <title>pandas_useful_websites</title>
-    <link href="https://yangxiongwiki.com/2019/04/02/python/basics/pandas_useful_websites/"/>
-    <id>https://yangxiongwiki.com/2019/04/02/python/basics/pandas_useful_websites/</id>
-    <published>2019-04-02T23:38:00.000Z</published>
-    <updated>2020-02-02T15:42:17.078Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>optimizing pandas looping speed:<br><a href="https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6" target="_blank" rel="external nofollow noopener noreferrer">https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6</a></p><p>Fast, Flexible, Easy and Intuitive: How to Speed Up Your Pandas Projects<br><a href="https://realpython.com/fast-flexible-pandas/" target="_blank" rel="external nofollow noopener noreferrer">https://realpython.com/fast-flexible-pandas/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://yangxiongwiki.com/categories/python/"/>
-    
-      <category term="basics" scheme="https://yangxiongwiki.com/categories/python/basics/"/>
-    
-    
-      <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
-    
-      <category term="pandas" scheme="https://yangxiongwiki.com/tags/pandas/"/>
+      <category term="finance" scheme="https://yangxiongwiki.com/tags/finance/"/>
     
   </entry>
   
