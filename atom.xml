@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangxiongwiki.com/"/>
-  <updated>2020-02-11T02:17:27.706Z</updated>
+  <updated>2020-02-17T02:28:37.358Z</updated>
   <id>https://yangxiongwiki.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>class_instances_to_dataframe</title>
+    <link href="https://yangxiongwiki.com/2020/02/16/python/advanced/class_instances_to_dataframe/"/>
+    <id>https://yangxiongwiki.com/2020/02/16/python/advanced/class_instances_to_dataframe/</id>
+    <published>2020-02-17T02:26:29.000Z</published>
+    <updated>2020-02-17T02:28:37.358Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>介绍一下如何把多个class instances 的值存成一个dataframe.</p><h1 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h1><p>先介绍一个defaultdict.这个是collections的一个骚东西.你建好了以后,每次新建一个Key的时候,value会自动建立一个自定义类型的初始化值.</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> collections</span><br></pre></td></tr></table></figure></div><p>例如 自定义value为list</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_dict = collections.defaultdict(list)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_dict</span><br></pre></td></tr></table></figure></div><pre><code>defaultdict(list, {})</code></pre><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_dict[<span class="string">"a"</span>].append(<span class="number">1</span>)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_dict[<span class="string">"b"</span>].append(<span class="number">2</span>)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_dict</span><br></pre></td></tr></table></figure></div><pre><code>defaultdict(list, {&#39;a&#39;: [1], &#39;b&#39;: [2]})</code></pre><p>够骚吧!</p><h1 id="多个class-instance-转换为defaultdict"><a href="#多个class-instance-转换为defaultdict" class="headerlink" title="多个class instance 转换为defaultdict"></a>多个class instance 转换为defaultdict</h1><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">my_class</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,a,b,c)</span>:</span></span><br><span class="line">        self.a = a</span><br><span class="line">        self.b = b</span><br><span class="line">        self.c = c</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class1 = my_class(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class2 = my_class(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class3 = my_class(<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br></pre></td></tr></table></figure></div><p>首先把这些classes全部添加到list</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class_list = [class1, class2, class3]</span><br></pre></td></tr></table></figure></div><p>创建一个defaultdict</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class_dict = collections.defaultdict(list)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> class_instance <span class="keyword">in</span> class_list:</span><br><span class="line">    <span class="keyword">for</span> key, value <span class="keyword">in</span> class_instance.__dict__.items():</span><br><span class="line">        class_dict[key].append(value)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">class_dict</span><br></pre></td></tr></table></figure></div><pre><code>defaultdict(list, {&#39;a&#39;: [1, 1, 3], &#39;b&#39;: [2, 2, 4], &#39;c&#39;: [3, 3, 5]})</code></pre><p>创建dataframe</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">frame = pd.DataFrame.from_dict(class_dict)</span><br></pre></td></tr></table></figure></div><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">frame</span><br></pre></td></tr></table></figure></div><div><style scoped>    .dataframe tbody tr th:only-of-type {        vertical-align: middle;    }    .dataframe tbody tr th {        vertical-align: top;    }    .dataframe thead th {        text-align: right;    }</style><table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>a</th>      <th>b</th>      <th>c</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>1</td>      <td>2</td>      <td>3</td>    </tr>    <tr>      <th>1</th>      <td>1</td>      <td>2</td>      <td>3</td>    </tr>    <tr>      <th>2</th>      <td>3</td>      <td>4</td>      <td>5</td>    </tr>  </tbody></table></div><p>大功告成!!骚吧!!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://yangxiongwiki.com/categories/python/"/>
+    
+      <category term="advanced" scheme="https://yangxiongwiki.com/categories/python/advanced/"/>
+    
+    
+      <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
+    
+      <category term="pandas" scheme="https://yangxiongwiki.com/tags/pandas/"/>
+    
+  </entry>
   
   <entry>
     <title>CTA summary notes</title>
@@ -582,36 +612,6 @@
     
     
       <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tensorflow notes</title>
-    <link href="https://yangxiongwiki.com/2019/12/23/python/basics/tensorflow_notes/"/>
-    <id>https://yangxiongwiki.com/2019/12/23/python/basics/tensorflow_notes/</id>
-    <published>2019-12-23T19:28:00.000Z</published>
-    <updated>2020-02-02T15:42:17.129Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="layer-shape-can-be-found-by"><a href="#layer-shape-can-be-found-by" class="headerlink" title="layer shape can be found by:"></a>layer shape can be found by:</h2><p>shape = (fc7.get_shape().as_list()[-1], fc8shape) <br><br>Through this we can get layer output shape, and feed to the next layer</p><h2 id="tensorflow-ConfigProto"><a href="#tensorflow-ConfigProto" class="headerlink" title="tensorflow ConfigProto"></a>tensorflow ConfigProto</h2><p>tf.ConfigProto()的参数<br>log_device_placement=True : 是否打印设备分配日志<br>allow_soft_placement=True ： 如果你指定的设备不存在，允许TF自动分配设备<br>tf.ConfigProto(log_device_placement=True,allow_soft_placement=True)</p><h2 id="控制GPU资源使用率"><a href="#控制GPU资源使用率" class="headerlink" title="控制GPU资源使用率"></a>控制GPU资源使用率</h2><p><strong>allow growth</strong><br><br>config = tf.ConfigProto()<br><br>config.gpu_options.allow_growth = True<br><br>session = tf.Session(config=config, …)<br><br>使用allow_growth option，刚一开始分配少量的GPU容量，然后按需慢慢的增加，由于不会释放<br><br>内存，所以会导致碎片<br></p><p><strong>per_process_gpu_memory_fraction</strong><br><br>gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction=0.7)<br><br>config=tf.ConfigProto(gpu_options=gpu_options)<br><br>session = tf.Session(config=config, …)<br><br>设置每个GPU应该拿出多少容量给进程使用，0.4代表 40%<br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://yangxiongwiki.com/categories/python/"/>
-    
-      <category term="basics" scheme="https://yangxiongwiki.com/categories/python/basics/"/>
-    
-    
-      <category term="python" scheme="https://yangxiongwiki.com/tags/python/"/>
-    
-      <category term="tensorflow" scheme="https://yangxiongwiki.com/tags/tensorflow/"/>
     
   </entry>
   
