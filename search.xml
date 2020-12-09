@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>class_tricks</title>
+      <link href="/2020/12/08/python/advanced/class_tricks/"/>
+      <url>/2020/12/08/python/advanced/class_tricks/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>track一些有用的 python class的连接</p><p>正确理解@staticmethod和@classmethod的实用例子</p><p><a href="https://zhuanlan.zhihu.com/p/28010894" target="_blank" rel="external nofollow noopener noreferrer">https://zhuanlan.zhihu.com/p/28010894</a></p><p>深入理解 <code>__new__</code></p><p><a href="https://blog.csdn.net/luoweifu/article/details/82732313" target="_blank" rel="external nofollow noopener noreferrer">https://blog.csdn.net/luoweifu/article/details/82732313</a></p><p>dataclasses 文档</p><p><a href="https://www.python.org/dev/peps/pep-0557/" target="_blank" rel="external nofollow noopener noreferrer">https://www.python.org/dev/peps/pep-0557/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+          <category> advanced </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>阴天</title>
       <link href="/2020/06/25/diary/%E9%98%B4%E5%A4%A9/"/>
       <url>/2020/06/25/diary/%E9%98%B4%E5%A4%A9/</url>
