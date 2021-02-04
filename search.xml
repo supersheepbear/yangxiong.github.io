@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>alpha strategy learning note</title>
+      <link href="/2021/02/01/finance/alpha/alpha_strategy_learning/"/>
+      <url>/2021/02/01/finance/alpha/alpha_strategy_learning/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这个是对于csdn多因子策略学习的笔记.</p><p>link:</p><p><a href="https://edu.csdn.net/course/detail/25572" target="_blank" rel="external nofollow noopener noreferrer">https://edu.csdn.net/course/detail/25572</a></p><h1 id="多因子策略简介"><a href="#多因子策略简介" class="headerlink" title="多因子策略简介"></a>多因子策略简介</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131214532.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131214532.png" class="lazyload"></a></p><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131214551.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131214551.png" class="lazyload"></a></p><h1 id="pandas-grouby的使用"><a href="#pandas-grouby的使用" class="headerlink" title="pandas grouby的使用"></a>pandas grouby的使用</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131223815.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131223815.png" class="lazyload"></a></p><p>截面波动率计算:</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data.groupby(<span class="string">'date'</span>)[<span class="string">'daily_return'</span>].std()<span class="string">'</span></span><br></pre></td></tr></table></figure></div><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131224210.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131224210.png" class="lazyload"></a></p><p>因为每天的截面波动率不一样, 所以需要做归一化.</p><p>比如对多只股票一段周期内每天的daily return做标准化, 也就是说要对每只股票价格除以当天所有股票的价格标准差..</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data.sort_value([<span class="string">'date'</span>, <span class="string">'symbol'</span>], inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">demo.groupby(<span class="string">'date'</span>)[<span class="string">'daily_return'</span>].apply(<span class="keyword">lambda</span> x: x / x.std()).values</span><br></pre></td></tr></table></figure></div><p>这里写.values的原因是因为groupby返回的index值会是一个multi-index, 和原来的dataframe的index不一样.</p><p>一定要先sort否则会出错. 一定要先sort groupby的那个column, 然后再sort symbol.</p><h1 id="因子计算和处理示例"><a href="#因子计算和处理示例" class="headerlink" title="因子计算和处理示例"></a>因子计算和处理示例</h1><h2 id="因子计算"><a href="#因子计算" class="headerlink" title="因子计算"></a>因子计算</h2><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131235018.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131235018.png" class="lazyload"></a></p><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131235542.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210131235542.png" class="lazyload"></a></p><h2 id="因子预处理"><a href="#因子预处理" class="headerlink" title="因子预处理"></a>因子预处理</h2><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210202011444.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210202011444.png" class="lazyload"></a></p><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210202011914.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210202011914.png" class="lazyload"></a></p><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210202012051.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210202012051.png" class="lazyload"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> finance </category>
+          
+          <category> alpha </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> finance </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>backtrader tecent tutorial notes</title>
       <link href="/2021/01/18/finance/backtrader/backtrader_tecent_tutorial/"/>
       <url>/2021/01/18/finance/backtrader/backtrader_tecent_tutorial/</url>
