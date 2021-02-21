@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangxiongwiki.com/"/>
-  <updated>2021-02-02T06:43:03.030Z</updated>
+  <updated>2021-02-21T15:47:46.507Z</updated>
   <id>https://yangxiongwiki.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>disk cleaning</title>
+    <link href="https://yangxiongwiki.com/2021/02/21/random_notes/disk_clean/"/>
+    <id>https://yangxiongwiki.com/2021/02/21/random_notes/disk_clean/</id>
+    <published>2021-02-21T16:06:00.000Z</published>
+    <updated>2021-02-21T15:47:46.507Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="windows10-disk-cleaning"><a href="#windows10-disk-cleaning" class="headerlink" title="windows10 disk cleaning"></a>windows10 disk cleaning</h1><p>最近公司电脑被磁盘空间折腾的不行<br>发现一款叫做spacesniffer的软件,<br>可以扫描你电脑所有的文件夹, 并可视化给你看.<br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210221104717.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210221104717.png" class="lazyload"></a><br>非常方便!!!!!!!!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="random_notes" scheme="https://yangxiongwiki.com/categories/random-notes/"/>
+    
+    
+      <category term="windows10" scheme="https://yangxiongwiki.com/tags/windows10/"/>
+    
+  </entry>
   
   <entry>
     <title>alpha strategy learning note</title>
@@ -565,36 +591,6 @@
     <updated>2020-02-02T15:40:53.121Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>简介：<br>此笔记为bilibili 应用统计学 视频的学习笔记。</p><h1 id="总体和样本"><a href="#总体和样本" class="headerlink" title="总体和样本"></a>总体和样本</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_1.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_1.jpg" class="lazyload" title></a></p><h1 id="excel-spss-和-minitab"><a href="#excel-spss-和-minitab" class="headerlink" title="excel, spss 和 minitab"></a>excel, spss 和 minitab</h1><h1 id="数据搜集"><a href="#数据搜集" class="headerlink" title="数据搜集"></a>数据搜集</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_2.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_2.jpg" class="lazyload" title></a></p><h1 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_3.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_3.jpg" class="lazyload" title></a></p><h1 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_4.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_4.jpg" class="lazyload" title></a></p><h1 id="描述统计软件操作"><a href="#描述统计软件操作" class="headerlink" title="描述统计软件操作"></a>描述统计软件操作</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_5.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_5.jpg" class="lazyload" title></a></p><h1 id="分布"><a href="#分布" class="headerlink" title="分布"></a>分布</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_6.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_6.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_7.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_7.jpg" class="lazyload" title></a></p><h1 id="假设检验"><a href="#假设检验" class="headerlink" title="假设检验"></a>假设检验</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_8.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_8.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_9.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_9.jpg" class="lazyload" title></a></p><h1 id="双样本检验"><a href="#双样本检验" class="headerlink" title="双样本检验"></a>双样本检验</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_10.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_10.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_11.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_11.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_12.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_12.jpg" class="lazyload" title></a></p><h1 id="方差分析"><a href="#方差分析" class="headerlink" title="方差分析"></a>方差分析</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_13.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_13.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_14.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_14.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_15.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_15.jpg" class="lazyload" title></a></p><h1 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_16.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_16.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_17.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_17.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_18.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_18.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_19.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_19.jpg" class="lazyload" title></a></p><h1 id="时间序列简介"><a href="#时间序列简介" class="headerlink" title="时间序列简介"></a>时间序列简介</h1><p><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_20.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_20.jpg" class="lazyload" title></a><br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_21.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@ff280eccc3e4dd79b9024925389e43e6d04b6d19/blog/image/B站应用统计学_21.jpg" class="lazyload" title></a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="math" scheme="https://yangxiongwiki.com/categories/math/"/>
-    
-      <category term="statistics" scheme="https://yangxiongwiki.com/categories/math/statistics/"/>
-    
-    
-      <category term="statistics" scheme="https://yangxiongwiki.com/tags/statistics/"/>
-    
-      <category term="math" scheme="https://yangxiongwiki.com/tags/math/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>statistics links</title>
-    <link href="https://yangxiongwiki.com/2020/01/06/math/statistics/statistics_links/"/>
-    <id>https://yangxiongwiki.com/2020/01/06/math/statistics/statistics_links/</id>
-    <published>2020-01-06T20:28:00.000Z</published>
-    <updated>2020-02-02T15:40:59.176Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="应用统计学视频"><a href="#应用统计学视频" class="headerlink" title="应用统计学视频"></a>应用统计学视频</h1><p><a href="https://www.bilibili.com/video/av9051072" target="_blank" rel="external nofollow noopener noreferrer">https://www.bilibili.com/video/av9051072</a></p><h1 id="应用统计学课件"><a href="#应用统计学课件" class="headerlink" title="应用统计学课件"></a>应用统计学课件</h1><p><a href="https://www.docin.com/p-106804331.html?docfrom=rrela" target="_blank" rel="external nofollow noopener noreferrer">https://www.docin.com/p-106804331.html?docfrom=rrela</a></p><h1 id="t分布理解"><a href="#t分布理解" class="headerlink" title="t分布理解"></a>t分布理解</h1><p><a href="http://www.360doc.com/content/18/0208/12/15930282_728577832.shtml" target="_blank" rel="external nofollow noopener noreferrer">http://www.360doc.com/content/18/0208/12/15930282_728577832.shtml</a></p><h1 id="t检验理解"><a href="#t检验理解" class="headerlink" title="t检验理解"></a>t检验理解</h1><p><a href="http://www.360doc.com/content/17/0523/18/40087574_656536995.shtml" target="_blank" rel="external nofollow noopener noreferrer">http://www.360doc.com/content/17/0523/18/40087574_656536995.shtml</a></p><h1 id="区间估计和假设检验的关系"><a href="#区间估计和假设检验的关系" class="headerlink" title="区间估计和假设检验的关系"></a>区间估计和假设检验的关系</h1><p><a href="https://wenku.baidu.com/view/aa7dee0fe87101f69e319545.html" target="_blank" rel="external nofollow noopener noreferrer">https://wenku.baidu.com/view/aa7dee0fe87101f69e319545.html</a></p><h1 id="一元线性回归的解释"><a href="#一元线性回归的解释" class="headerlink" title="一元线性回归的解释"></a>一元线性回归的解释</h1><p><a href="https://zhuanlan.zhihu.com/p/31668592?from_voters_page=true" target="_blank" rel="external nofollow noopener noreferrer">https://zhuanlan.zhihu.com/p/31668592?from_voters_page=true</a></p>]]></content>
     
     <summary type="html">
     

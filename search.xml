@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>disk cleaning</title>
+      <link href="/2021/02/21/random_notes/disk_clean/"/>
+      <url>/2021/02/21/random_notes/disk_clean/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="windows10-disk-cleaning"><a href="#windows10-disk-cleaning" class="headerlink" title="windows10 disk cleaning"></a>windows10 disk cleaning</h1><p>最近公司电脑被磁盘空间折腾的不行<br>发现一款叫做spacesniffer的软件,<br>可以扫描你电脑所有的文件夹, 并可视化给你看.<br><a href="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210221104717.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/supersheepbear/blog_source@master/blog/image/20210221104717.png" class="lazyload"></a><br>非常方便!!!!!!!!</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> random_notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>alpha strategy learning note</title>
       <link href="/2021/02/01/finance/alpha/alpha_strategy_learning/"/>
       <url>/2021/02/01/finance/alpha/alpha_strategy_learning/</url>
